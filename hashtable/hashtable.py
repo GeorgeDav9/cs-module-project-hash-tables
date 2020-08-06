@@ -100,7 +100,7 @@ class HashTable:
                     if self.get_load_factor() >= 0.7:
                         self.resize(self.capacity * 2)
                     if self.get_load_factor() <= 0.2:
-                        self.resize(self.capacity / 2)
+                        self.resize(self.capacity // 2)
                     return
                 last_value = existing_value
                 existing_value = new_value.next       
